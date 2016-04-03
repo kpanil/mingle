@@ -1,0 +1,6 @@
+# files, directories to be skipped from commit
+
+
+*.log
+bin/
+node_modules
