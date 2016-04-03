@@ -31,8 +31,7 @@ Let's mingle
 
 
  ###How to sync your forked repo with central
-
-
+```
   git remote add upstream https://github.com/kpanil/mingle.git
 
   git fetch upstream
@@ -44,34 +43,37 @@ Let's mingle
 
   git checkout working-branch
   git rebase master
-
- ##Basic git setup
+```
+ ###Basic git setup
  
-
- ### editor to be used with git commit
+ #### editor to be used with git commit
 
  git config --global core.editor "vim" // or your favorite editor. you can also do it by exporting GIT_EDITOR
 
- ### Let git know your identity with github
-
+ #### Let git know your identity with github
+```
  git config --global user.email "you@email.com"
  git config --global user.name  "your name"
+```
+ #### Some useful shortcuts
 
- ### Some useful shortcuts
-
+```
  git config --global alias.co checkout
  git config --global alias.br branch
  git config --global alias.ci commit
  git config --global alias.st status
+```
 
- ### Running node project
+ #### Running node project
 
+```
  cd mingle/src
  npm install
  npm start
-
+```
  use nodemon to start node application to auto-restart app when file changes
+```
  npm install -g nodemon
  cd mingle/src
  nodemon
-
+```
