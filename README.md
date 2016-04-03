@@ -33,6 +33,21 @@ Let's mingle
 6. Goto github and place a pull request for your changes to be reviewed/approved and merged to the central repository
 
 
+ How to sync your forked repo with central
+ ----------------------------------------
+
+  git remote add upstream https://github.com/kpanil/mingle.git
+
+  git fetch upstream
+  
+  git checkout master
+  git rebase upstream/master
+
+  git push -u origin master
+
+  git checkout working-branch
+  git rebase master
+
  Basic git setup
  ---------------
 
