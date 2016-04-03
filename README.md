@@ -5,10 +5,7 @@ Let's mingle
 
 2. clone your remote repository to your local working directory by,
 
-   mkdir -p mingle/master
-   cd mingle/master
-
-   git clone https://github.com/${yourname}/mingle.git src
+   git clone https://github.com/${yourname}/mingle.git mingle
 
 3. create a new branch for your changes
 
@@ -66,4 +63,15 @@ Let's mingle
  git config --global alias.br branch
  git config --global alias.ci commit
  git config --global alias.st status
+
+ ## Running node project
+
+ cd mingle/src
+ npm install
+ npm start
+
+ use nodemon to start node application to auto-restart app when file changes
+ npm install -g nodemon
+ cd mingle/src
+ nodemon
 
